@@ -1,3 +1,21 @@
 /**
 * Lightbox
 */
+#lightbox[open]{
+    border-radius: 5%;
+}
+
+::backdrop{
+    background-color:burlywood;
+    opacity: 50%;
+    animation: 5s ease-in;
+    animation-name: opacity;
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 50%;
+    }
